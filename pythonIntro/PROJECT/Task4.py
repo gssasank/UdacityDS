@@ -31,5 +31,22 @@ for lst in calls:
     if lst[0].startswith("140"):
         market.add(lst[0])
 
+probable_market = set()
 
-print("These numbers could be telemarketers: \n{}".format('\n'.join(sorted(market))))
+line1 = []
+line2 = []
+for l in calls:
+    line1.append(l[0])
+    line2.append(l[1])
+
+for i in line1:
+    if i not in line2:
+        probable_market.add(i)
+
+print(probable_market)
+
+final = []
+
+final = list(market) + list(probable_market)
+
+print("These numbers could be telemarketers: \n{}".format('\n'.join(sorted(final))))
