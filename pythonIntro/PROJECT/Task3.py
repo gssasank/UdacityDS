@@ -68,7 +68,7 @@ for num in fixed:
     if num.startswith("("):
         ans.append(num.split(')')[0][1:])
     else:
-        ans.append(num.split()[0])
+        ans.append(num.split()[0][:4])
 
 print("The numbers called by people in Bangalore have codes:\n{}".format('\n'.join(sorted(set(ans)))))
 
