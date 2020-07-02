@@ -2,6 +2,10 @@ class Node:
     def __init__(self, value):
         self.value = value
         self.next = None
+        
+        
+
+
 def create_linked_list(input_list):
     """
     Function to create a linked list
