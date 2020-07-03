@@ -58,9 +58,7 @@ def iscircular(linked_list):
                 return True
                 
             
-    # TODO: Write function to check if linked list is circular
-    
-    pass
+   
 
 # Test Cases
 
