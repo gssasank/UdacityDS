@@ -42,3 +42,19 @@ while node:
     node = node.next
 
 print(linked_list.to_list())
+
+# Define a function outside of the class
+def prepend(self, value):
+    """ Prepend a value to the beginning of the list. """
+    # TODO: Write function to prepend here
+    if self.head is None:
+        self.head = Node(value)
+    
+    else:
+        new_head = Node(value)
+        new_head.next = self.head
+        self.head = new_head
+
+
+# This is the way to add a function to a class after it has been defined
+LinkedList.prepend = prepend
