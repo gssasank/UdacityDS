@@ -18,8 +18,9 @@ class Group(object):
 
     def get_name(self):
         return self.name
+
     def is_empty(self):
-        if len(self.get_groups()) == 0 :
+        if len(self.get_groups()) == 0:
             return True
         else:
             return False
@@ -37,13 +38,7 @@ parent.add_group(child)
 
 
 def is_user_in_group(user, group):
-    """
-    Return True if user is in the group, False otherwise.
 
-    Args:
-      user(str): user name/id
-      group(class:Group): group to check user membership against
-    """
     if user in group.get_users():
         # Base case for recursion
         return True
@@ -54,9 +49,9 @@ def is_user_in_group(user, group):
             # Recursive Call
             for sub_user in group.get_groups():
                 return is_user_in_group(user, sub_user)
-    
+
+
 print(is_user_in_group(sub_child_user, parent))
 print(is_user_in_group(sub_child_user, child))
-print(is_user_in_group(sub_child_user, sub_child))   
-# worst case time complexity is O(n^2)
-    
+print(is_user_in_group(sub_child_user, sub_child))
+
