@@ -27,7 +27,7 @@ def binary_search(array, target):
 def test_function(test):
     answer = binary_search(test[0], test[1])
     if answer == test[2]:
-        print("Pass!")
+        print("Pass! ☕️")
     else:
         print("Fail!")
 
