@@ -11,6 +11,7 @@ print('Is "a"   a word: {}'.format(basic_trie['a']['word_end']))
 print('Is "ad"  a word: {}'.format(basic_trie['a']['d']['word_end']))
 print('Is "add" a word: {}'.format(basic_trie['a']['d']['d']['word_end']))
 
+print("==============================================================================================")
 
 class TrieNode(object):
     def __init__(self):
