@@ -6,12 +6,12 @@ basic_trie = {
         'i': {'word_end': True},
         'word_end': False}}
 
-
 print('Is "a"   a word: {}'.format(basic_trie['a']['word_end']))
 print('Is "ad"  a word: {}'.format(basic_trie['a']['d']['word_end']))
 print('Is "add" a word: {}'.format(basic_trie['a']['d']['d']['word_end']))
 
 print("==============================================================================================")
+
 
 class TrieNode(object):
     def __init__(self):
@@ -52,7 +52,7 @@ class Trie(object):
         return current_node.is_word
 
 
-word_list = ['apple', 'bear', 'goo', 'good', 'goodbye', 'goods', 'goodwill', 'gooses'  ,'zebra']
+word_list = ['apple', 'bear', 'goo', 'good', 'goodbye', 'goods', 'goodwill', 'gooses', 'zebra']
 word_trie = Trie()
 
 # Add words
