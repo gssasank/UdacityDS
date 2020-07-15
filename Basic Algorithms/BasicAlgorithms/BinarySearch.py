@@ -10,6 +10,7 @@ def binary_search(array, target):
       -1: if the target is not found
 
     '''
+    
 
     first_element = 0
     last_element = len(array) - 1
