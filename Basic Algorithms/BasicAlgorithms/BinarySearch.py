@@ -25,3 +25,4 @@ target = 6
 index = 6
 test_case = [array, target, index]
 test_function(test_case)
+print("great")
