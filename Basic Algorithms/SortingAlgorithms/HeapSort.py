@@ -71,4 +71,3 @@ solution = [0, 0, 1, 2, 5, 12, 21]
 test_case = [arr, solution]
 test_function(test_case)
 
-

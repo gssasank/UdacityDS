@@ -6,3 +6,4 @@ for i, name in enumerate(cast):
     cast[i] = name + " " + str(heights[i])
 
 print(cast)
+
